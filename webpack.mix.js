@@ -1,4 +1,4 @@
-const { mix } = require('laravel-mix');
+const {mix} = require('laravel-mix');
 
 /*
  |--------------------------------------------------------------------------
@@ -12,4 +12,10 @@ const { mix } = require('laravel-mix');
  */
 
 mix.js('resources/assets/js/app.js', 'public/js');
-mix.sass('resources/assets/sass/app.scss', 'public/css');
+
+mix.sass('resources/assets/sass/main.scss', 'public/css')
+    .sass('resources/assets/sass/animate.scss', 'public/css')
+    .sass('resources/assets/sass/font-awesome.scss', 'public/css')
+    .sass('resources/assets/sass/jquery.fancybox.scss', 'public/css')
+    .sass('resources/assets/sass/owl.carousel.scss', 'public/css')
+    .sass('resources/assets/sass/select2.scss', 'public/css');

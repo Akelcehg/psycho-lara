@@ -1,4 +1,9 @@
 {
   "/js/app.js": "/js/app.js",
-  "/css/app.css": "/css/app.css"
+  "/css/main.css": "/css/main.css",
+  "/css/animate.css": "/css/animate.css",
+  "/css/font-awesome.css": "/css/font-awesome.css",
+  "/css/jquery.fancybox.css": "/css/jquery.fancybox.css",
+  "/css/owl.carousel.css": "/css/owl.carousel.css",
+  "/css/select2.css": "/css/select2.css"
 }
