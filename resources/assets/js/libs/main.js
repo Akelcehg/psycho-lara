@@ -1325,22 +1325,22 @@ $(document).ready(function() {
   /**/
   /***********   twitter   ********/
   /**/
-  $('.twitter-carousel').tweet({
+  /*$('.twitter-carousel').tweet({
     username: 'Creative_WS',
     count: 8,
     loading_text: 'loading twitter feed...',
     template: "<i class='fa fa-twitter twitt'></i><p><a class='cp-color' href='{user_url}'>@{screen_name}</a>{join}{text}<br>{time}</p>"
   });
 
-  /**/
-  /* wrap tweet list for 2 elements */
-  /**/
+  /!**!/
+  /!* wrap tweet list for 2 elements *!/
+  /!**!/
   $('.twitter-carousel .tweet_list').WrapThis(2, 'li');
   $('.twitter-carousel .tweet_list').addClass("widget-carousel").addClass("owl-carousel");
 
-  /**/
-  /***********   twitter   ********/
-  /**/
+  /!**!/
+  /!***********   twitter   ********!/
+  /!**!/
   $('.twitter-1').tweet({
     username: 'Creative_WS',
     count: 8,
@@ -1348,10 +1348,10 @@ $(document).ready(function() {
     template: "<i class='fa fa-twitter twitt'></i><div class='divider-mini'></div><p><a class='cp-color' href='{user_url}'>@{screen_name}</a>{join}{text}<br>{time}</p>"
   });
 
-  /**/
-  /* wrap tweet list for 2 elements */
-  /**/
-  $('.twitter-1 .tweet_list').addClass("testimonials-carousel").addClass("owl-carousel");;
+  /!**!/
+  /!* wrap tweet list for 2 elements *!/
+  /!**!/
+  $('.twitter-1 .tweet_list').addClass("testimonials-carousel").addClass("owl-carousel");;*/
 
 
 

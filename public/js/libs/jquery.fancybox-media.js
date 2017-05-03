@@ -1,3 +1,84 @@
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId])
+/******/ 			return installedModules[moduleId].exports;
+/******/
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// identity function for calling harmony imports with the correct context
+/******/ 	__webpack_require__.i = function(value) { return value; };
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, {
+/******/ 				configurable: false,
+/******/ 				enumerable: true,
+/******/ 				get: getter
+/******/ 			});
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = 24);
+/******/ })
+/************************************************************************/
+/******/ ({
+
+/***/ 24:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(3);
+
+
+/***/ }),
+
+/***/ 3:
+/***/ (function(module, exports) {
+
 /*!
  * Media helper for fancyBox
  * version: 1.0.6 (Fri, 14 Jun 2013)
@@ -66,121 +147,122 @@
 	"use strict";
 
 	//Shortcut for fancyBox object
+
 	var F = $.fancybox,
-		format = function( url, rez, params ) {
-			params = params || '';
+	    format = function format(url, rez, params) {
+		params = params || '';
 
-			if ( $.type( params ) === "object" ) {
-				params = $.param(params, true);
-			}
+		if ($.type(params) === "object") {
+			params = $.param(params, true);
+		}
 
-			$.each(rez, function(key, value) {
-				url = url.replace( '$' + key, value || '' );
-			});
+		$.each(rez, function (key, value) {
+			url = url.replace('$' + key, value || '');
+		});
 
-			if (params.length) {
-				url += ( url.indexOf('?') > 0 ? '&' : '?' ) + params;
-			}
+		if (params.length) {
+			url += (url.indexOf('?') > 0 ? '&' : '?') + params;
+		}
 
-			return url;
-		};
+		return url;
+	};
 
 	//Add helper object
 	F.helpers.media = {
-		defaults : {
-			youtube : {
-				matcher : /(youtube\.com|youtu\.be|youtube-nocookie\.com)\/(watch\?v=|v\/|u\/|embed\/?)?(videoseries\?list=(.*)|[\w-]{11}|\?listType=(.*)&list=(.*)).*/i,
-				params  : {
-					autoplay    : 1,
-					autohide    : 1,
-					fs          : 1,
-					rel         : 0,
-					hd          : 1,
-					wmode       : 'opaque',
-					enablejsapi : 1
+		defaults: {
+			youtube: {
+				matcher: /(youtube\.com|youtu\.be|youtube-nocookie\.com)\/(watch\?v=|v\/|u\/|embed\/?)?(videoseries\?list=(.*)|[\w-]{11}|\?listType=(.*)&list=(.*)).*/i,
+				params: {
+					autoplay: 1,
+					autohide: 1,
+					fs: 1,
+					rel: 0,
+					hd: 1,
+					wmode: 'opaque',
+					enablejsapi: 1
 				},
-				type : 'iframe',
-				url  : '//www.youtube.com/embed/$3'
+				type: 'iframe',
+				url: '//www.youtube.com/embed/$3'
 			},
-			vimeo : {
-				matcher : /(?:vimeo(?:pro)?.com)\/(?:[^\d]+)?(\d+)(?:.*)/,
-				params  : {
-					autoplay      : 1,
-					hd            : 1,
-					show_title    : 1,
-					show_byline   : 1,
-					show_portrait : 0,
-					fullscreen    : 1
+			vimeo: {
+				matcher: /(?:vimeo(?:pro)?.com)\/(?:[^\d]+)?(\d+)(?:.*)/,
+				params: {
+					autoplay: 1,
+					hd: 1,
+					show_title: 1,
+					show_byline: 1,
+					show_portrait: 0,
+					fullscreen: 1
 				},
-				type : 'iframe',
-				url  : '//player.vimeo.com/video/$1'
+				type: 'iframe',
+				url: '//player.vimeo.com/video/$1'
 			},
-			metacafe : {
-				matcher : /metacafe.com\/(?:watch|fplayer)\/([\w\-]{1,10})/,
-				params  : {
-					autoPlay : 'yes'
+			metacafe: {
+				matcher: /metacafe.com\/(?:watch|fplayer)\/([\w\-]{1,10})/,
+				params: {
+					autoPlay: 'yes'
 				},
-				type : 'swf',
-				url  : function( rez, params, obj ) {
-					obj.swf.flashVars = 'playerVars=' + $.param( params, true );
+				type: 'swf',
+				url: function url(rez, params, obj) {
+					obj.swf.flashVars = 'playerVars=' + $.param(params, true);
 
 					return '//www.metacafe.com/fplayer/' + rez[1] + '/.swf';
 				}
 			},
-			dailymotion : {
-				matcher : /dailymotion.com\/video\/(.*)\/?(.*)/,
-				params  : {
-					additionalInfos : 0,
-					autoStart : 1
+			dailymotion: {
+				matcher: /dailymotion.com\/video\/(.*)\/?(.*)/,
+				params: {
+					additionalInfos: 0,
+					autoStart: 1
 				},
-				type : 'swf',
-				url  : '//www.dailymotion.com/swf/video/$1'
+				type: 'swf',
+				url: '//www.dailymotion.com/swf/video/$1'
 			},
-			twitvid : {
-				matcher : /twitvid\.com\/([a-zA-Z0-9_\-\?\=]+)/i,
-				params  : {
-					autoplay : 0
+			twitvid: {
+				matcher: /twitvid\.com\/([a-zA-Z0-9_\-\?\=]+)/i,
+				params: {
+					autoplay: 0
 				},
-				type : 'iframe',
-				url  : '//www.twitvid.com/embed.php?guid=$1'
+				type: 'iframe',
+				url: '//www.twitvid.com/embed.php?guid=$1'
 			},
-			twitpic : {
-				matcher : /twitpic\.com\/(?!(?:place|photos|events)\/)([a-zA-Z0-9\?\=\-]+)/i,
-				type : 'image',
-				url  : '//twitpic.com/show/full/$1/'
+			twitpic: {
+				matcher: /twitpic\.com\/(?!(?:place|photos|events)\/)([a-zA-Z0-9\?\=\-]+)/i,
+				type: 'image',
+				url: '//twitpic.com/show/full/$1/'
 			},
-			instagram : {
-				matcher : /(instagr\.am|instagram\.com)\/p\/([a-zA-Z0-9_\-]+)\/?/i,
-				type : 'image',
-				url  : '//$1/p/$2/media/?size=l'
+			instagram: {
+				matcher: /(instagr\.am|instagram\.com)\/p\/([a-zA-Z0-9_\-]+)\/?/i,
+				type: 'image',
+				url: '//$1/p/$2/media/?size=l'
 			},
-			google_maps : {
-				matcher : /maps\.google\.([a-z]{2,3}(\.[a-z]{2})?)\/(\?ll=|maps\?)(.*)/i,
-				type : 'iframe',
-				url  : function( rez ) {
+			google_maps: {
+				matcher: /maps\.google\.([a-z]{2,3}(\.[a-z]{2})?)\/(\?ll=|maps\?)(.*)/i,
+				type: 'iframe',
+				url: function url(rez) {
 					return '//maps.google.' + rez[1] + '/' + rez[3] + '' + rez[4] + '&output=' + (rez[4].indexOf('layer=c') > 0 ? 'svembed' : 'embed');
 				}
 			}
 		},
 
-		beforeLoad : function(opts, obj) {
-			var url   = obj.href || '',
-				type  = false,
-				what,
-				item,
-				rez,
-				params;
+		beforeLoad: function beforeLoad(opts, obj) {
+			var url = obj.href || '',
+			    type = false,
+			    what,
+			    item,
+			    rez,
+			    params;
 
 			for (what in opts) {
 				if (opts.hasOwnProperty(what)) {
-					item = opts[ what ];
-					rez  = url.match( item.matcher );
+					item = opts[what];
+					rez = url.match(item.matcher);
 
 					if (rez) {
-						type   = item.type;
-						params = $.extend(true, {}, item.params, obj[ what ] || ($.isPlainObject(opts[ what ]) ? opts[ what ].params : null));
+						type = item.type;
+						params = $.extend(true, {}, item.params, obj[what] || ($.isPlainObject(opts[what]) ? opts[what].params : null));
 
-						url = $.type( item.url ) === "function" ? item.url.call( this, rez, params, obj ) : format( item.url, rez, params );
+						url = $.type(item.url) === "function" ? item.url.call(this, rez, params, obj) : format(item.url, rez, params);
 
 						break;
 					}
@@ -195,5 +277,8 @@
 			}
 		}
 	};
+})(jQuery);
 
-}(jQuery));
+/***/ })
+
+/******/ });

@@ -787,12 +787,11 @@
 	<script type="text/javascript" src="js/libs/rs-plugin/js/extensions/revolution.extension.parallax.min.js"></script>
 	<script src="js/libs/jquery.isotope.min.js"></script>
 	
-	<script src="js/libs/owl.carousel.min.js"></script>
+	<script src="js/libs/owl.carousel.js"></script>
 	<script src="js/libs/jquery-ui.min.js"></script>
 	<script src="js/libs/jflickrfeed.min.js"></script>
 	<script src="js/libs/jquery.fancybox.pack.js"></script>
 	<script src="js/libs/jquery.fancybox-media.js"></script>
 	<script src="js/libs/retina.min.js"></script>
-	<script src="js/libs/jquery.tweet.js"></script>
 </body>
 </html>
