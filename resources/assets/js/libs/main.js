@@ -1190,9 +1190,9 @@ $(document).ready(function() {
   if( $(".calendar-header").length ) {
     $(function(){
       var event_content = {
-        0:{view:"list-view-calendar", container:"day-view-wrap" , carousel:"carousel-list-view.html"},
-        1:{view:"week-view", container: "week-view-wrap", carousel:"carousel-week-view.html"},
-        2:{view:"month" , container:"event-calendar", carousel:"carousel-month-view.html"}
+        0:{view:"list-view-calendar", container:"day-view-wrap" , carousel:"carousel-list-view"},
+        1:{view:"week-view", container: "week-view-wrap", carousel:"carousel-week-view"},
+        2:{view:"month" , container:"event-calendar", carousel:"carousel-month-view"}
       };
       var i = 2;
       var window_w = $(window).outerWidth();
@@ -1205,8 +1205,9 @@ $(document).ready(function() {
       });
       function qwer(){
         $.ajax({  
-          type: "POST",
-          url: event_content[i].view + ".html",
+          type: "GET",
+          //url: event_content[i].view + ".html",
+          url: event_content[i].view,
           cache: false,
             success: function(html)
             {
@@ -1229,7 +1230,7 @@ $(document).ready(function() {
             }
         });
         $.ajax({  
-          type: "POST",
+          type: "GET",
           url: event_content[i].carousel,
           cache: false,
             success: function(html)

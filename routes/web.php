@@ -19,6 +19,14 @@ Route::get('/calendar', function () {
     return view('event-calendar');
 });
 
-Auth::routes();
+Route::get('/carousel-month-view', function () {
+    return view('carousel-month-view');
+});
+
+Route::get('/month', function () {
+    return view('month');
+});
+
+    Auth::routes();
 
 Route::get('/home', 'HomeController@index');

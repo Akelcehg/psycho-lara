@@ -1155,64 +1155,67 @@ $(document).ready(function () {
   /**/
   /********   Event content   *********/
   /**/
-  if ($(".calendar-header").length) {
-    $(function () {
-      var event_content = {
-        0: { view: "list-view-calendar", container: "day-view-wrap", carousel: "carousel-list-view.html" },
-        1: { view: "week-view", container: "week-view-wrap", carousel: "carousel-week-view.html" },
-        2: { view: "month", container: "event-calendar", carousel: "carousel-month-view.html" }
-      };
-      var i = 2;
-      var window_w = $(window).outerWidth();
-      var clicked_elem = $(".month-view");
-      qwer();
-      $('.calendar-view').on('click', function () {
-        clicked_elem = $(this);
-        i = clicked_elem.index();
-        qwer();
+  /*  if( $(".calendar-header").length ) {
+      $(function(){
+        var event_content = {
+          0:{view:"list-view-calendar", container:"day-view-wrap" , carousel:"carousel-list-view"},
+          1:{view:"week-view", container: "week-view-wrap", carousel:"carousel-week-view"},
+          2:{view:"month" , container:"event-calendar", carousel:"carousel-month-view"}
+        };
+        var i = 2;
+        var window_w = $(window).outerWidth();
+        var clicked_elem = $(".month-view");
+        qwer ();
+        $('.calendar-view').on( 'click', function(){
+          clicked_elem = $(this);
+          i = clicked_elem.index();
+          qwer();
+        });
+        function qwer(){
+          $.ajax({  
+            type: "GET",
+            //url: event_content[i].view + ".html",
+            url: event_content[i].view,
+            cache: false,
+              success: function(html)
+              {
+                $(".event-container>.previous").remove();
+                $(".event-container>.current").removeClass("current").addClass("previous");
+                $('.calendar-view').removeClass("active");
+                clicked_elem.addClass('active');
+                $(".event-container").append(html);
+                carousel_init(event_content[i].container);
+                $(".event-container").height($(".event-container>div:last-child").outerHeight(true));
+                $(window).resize(function(){
+                  $(".event-container").height($(".event-container>div:last-child").outerHeight(true));
+                })
+                setTimeout(function(){             
+                  $(".event-container>div:last-child").addClass("current");
+                }, 400);
+              },
+              error: function(){
+                alert("Sorry this file invalid, or your url are wrong.")
+              }
+          });
+          $.ajax({  
+            type: "GET",
+            url: event_content[i].carousel,
+            cache: false,
+              success: function(html)
+              {
+                $(".calendar-header .buttons-carousel .calendar-list").remove();
+                $(".calendar-header .buttons-carousel .carousel-list").remove();
+                $(".calendar-header .buttons-carousel").append(html);
+                carousel_init_list("carousel-list");
+              },
+              error: function(){
+                $(".calendar-header .buttons-carousel .carousel-list").remove();
+                $(".calendar-header .buttons-carousel").append("<div class='carousel-list'><i class='fa fa-calendar'></i> July 2015</div>");
+              }
+          });
+        };
       });
-      function qwer() {
-        $.ajax({
-          type: "POST",
-          url: event_content[i].view + ".html",
-          cache: false,
-          success: function success(html) {
-            $(".event-container>.previous").remove();
-            $(".event-container>.current").removeClass("current").addClass("previous");
-            $('.calendar-view').removeClass("active");
-            clicked_elem.addClass('active');
-            $(".event-container").append(html);
-            carousel_init(event_content[i].container);
-            $(".event-container").height($(".event-container>div:last-child").outerHeight(true));
-            $(window).resize(function () {
-              $(".event-container").height($(".event-container>div:last-child").outerHeight(true));
-            });
-            setTimeout(function () {
-              $(".event-container>div:last-child").addClass("current");
-            }, 400);
-          },
-          error: function error() {
-            alert("Sorry this file invalid, or your url are wrong.");
-          }
-        });
-        $.ajax({
-          type: "POST",
-          url: event_content[i].carousel,
-          cache: false,
-          success: function success(html) {
-            $(".calendar-header .buttons-carousel .calendar-list").remove();
-            $(".calendar-header .buttons-carousel .carousel-list").remove();
-            $(".calendar-header .buttons-carousel").append(html);
-            carousel_init_list("carousel-list");
-          },
-          error: function error() {
-            $(".calendar-header .buttons-carousel .carousel-list").remove();
-            $(".calendar-header .buttons-carousel").append("<div class='carousel-list'><i class='fa fa-calendar'></i> July 2015</div>");
-          }
-        });
-      };
-    });
-  };
+    };*/
 
   /**/
   /* popup position */
