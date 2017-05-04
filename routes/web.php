@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get('/calendar', function () {
+    return view('event-calendar');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
