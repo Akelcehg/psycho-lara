@@ -1,11 +1,13 @@
 <?php
 
-use Illuminate\Support\Facades\Schema;
+//use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
 class CreateNewsTable extends Migration
 {
+    protected $tableName = 'news';
+
     /**
      * Run the migrations.
      *
@@ -13,7 +15,17 @@ class CreateNewsTable extends Migration
      */
     public function up()
     {
-        //
+        Schema::create($this->tableName, function (Blueprint $table) {
+            $table->increments('id');
+
+            $table->string('header');
+            $table->longText('text');
+
+            $table->integer('user_id')->unsigned();
+            $table->foreign('user_id')->references('id')->on('users');
+
+            $table->timestamps();
+        });
     }
 
     /**
@@ -23,6 +35,6 @@ class CreateNewsTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists($this->tableName);
     }
 }
