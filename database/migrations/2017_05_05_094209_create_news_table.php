@@ -20,6 +20,7 @@ class CreateNewsTable extends Migration
 
             $table->string('header_image');
             $table->string('header');
+            $table->text('preview_text');
             $table->longText('text');
 
             $table->integer('user_id')->unsigned();
