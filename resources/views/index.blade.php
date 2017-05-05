@@ -6,7 +6,7 @@
         <div class="tp-banner-slider">
             <ul>
                 <li data-masterspeed="700">
-                    <images src="js/libs/rs-plugin/assets/loader.gif" data-lazyload="http://placehold.it/2500x1500" alt>
+                    <img src="js/libs/rs-plugin/assets/loader.gif" data-lazyload="http://placehold.it/2500x1500" alt>
                         <div class="tp-caption sl-content align-left" data-x="['left','center','center','center']"
                              data-hoffset="20" data-y="center" data-voffset="0"
                              data-width="['720px','600px','500px','300px']"
@@ -19,7 +19,7 @@
                         </div>
                 </li>
                 <li data-masterspeed="700">
-                    <images src="js/libs/rs-plugin/assets/loader.gif" data-lazyload="http://placehold.it/2500x1500" alt>
+                    <img src="js/libs/rs-plugin/assets/loader.gif" data-lazyload="http://placehold.it/2500x1500" alt>
                         <div class="tp-caption sl-content align-right" data-x="['right','center','center','center']"
                              data-hoffset="20" data-y="center" data-voffset="0"
                              data-width="['720px','600px','500px','300px']"
@@ -32,7 +32,7 @@
                         </div>
                 </li>
                 <li data-masterspeed="700" data-transition="fade">
-                    <images src="js/libs/rs-plugin/assets/loader.gif" data-lazyload="http://placehold.it/2500x1500" alt>
+                    <img src="js/libs/rs-plugin/assets/loader.gif" data-lazyload="http://placehold.it/2500x1500" alt>
                         <div class="tp-caption sl-content align-center" data-x="center" data-hoffset="0" data-y="center"
                              data-voffset="0" data-width="['720px','600px','500px','300px']"
                              data-transform_in="opacity:0;s:1000;e:Power2.easeInOut;"
@@ -44,7 +44,7 @@
                         </div>
                 </li>
                 <li data-masterspeed="700" data-transition="fade">
-                    <images src="js/libs/rs-plugin/assets/loader.gif" data-bgposition="center right"
+                    <img src="js/libs/rs-plugin/assets/loader.gif" data-bgposition="center right"
                             data-lazyload="http://placehold.it/2500x1500" alt>
                         <div class="tp-caption sl-content align-left" data-x="['left','center','center','center']"
                              data-hoffset="20" data-y="center" data-voffset="40"
@@ -73,7 +73,7 @@
                         <!-- course item -->
                         <div class="course-item">
                             <div class="course-hover">
-                                <images src="http://placehold.it/370x280" data-at2x="http://placehold.it/370x280" alt>
+                                <img src="http://placehold.it/370x280" data-at2x="http://placehold.it/370x280" alt>
                                     <div class="hover-bg bg-color-1"></div>
                                     <a href="">Learn More</a>
                             </div>
@@ -96,7 +96,7 @@
                         <!-- course item -->
                         <div class="course-item">
                             <div class="course-hover">
-                                <images src="http://placehold.it/370x280" data-at2x="http://placehold.it/370x280"
+                                <img src="http://placehold.it/370x280" data-at2x="http://placehold.it/370x280"
                                         alt="">
                                     <div class="hover-bg bg-color-2"></div>
                                     <a href="">Learn More</a>
@@ -120,7 +120,7 @@
                         <!-- course item -->
                         <div class="course-item">
                             <div class="course-hover">
-                                <images src="http://placehold.it/370x280" data-at2x="http://placehold.it/370x280"
+                                <img src="http://placehold.it/370x280" data-at2x="http://placehold.it/370x280"
                                         alt="">
                                     <div class="hover-bg bg-color-3"></div>
                                     <a href="">Learn More</a>
@@ -177,7 +177,7 @@
         <div class="parallaxed">
             <div class="parallax-image" data-parallax-left="0.5" data-parallax-top="0.3"
                  data-parallax-scroll-speed="0.5">
-                <images src="images/parallax.png" alt="">
+                <img src="images/parallax.png" alt="">
 
             </div>
             <div class="them-mask bg-color-1"></div>
@@ -278,13 +278,13 @@
                     <div class="grid-col grid-col-6">
                         <div class="boxs-tab">
                             <div class="animated fadeIn active" data-box="1">
-                                <images src="http://placehold.it/510x340" data-at2x="http://placehold.it/510x340" alt>
+                                <img src="http://placehold.it/510x340" data-at2x="http://placehold.it/510x340" alt>
                             </div>
                             <div class="animated fadeIn" data-box="2">
-                                <images src="http://placehold.it/510x340" data-at2x="http://placehold.it/510x340" alt>
+                                <img src="http://placehold.it/510x340" data-at2x="http://placehold.it/510x340" alt>
                             </div>
                             <div class="animated fadeIn" data-box="3">
-                                <images src="http://placehold.it/510x340" data-at2x="http://placehold.it/510x340" alt>
+                                <img src="http://placehold.it/510x340" data-at2x="http://placehold.it/510x340" alt>
                             </div>
                         </div>
                     </div>
@@ -360,10 +360,10 @@
                     <div class="grid-col grid-col-6">
                         <div class="owl-carousel full-width-slider">
                             <div class="gallery-item picture">
-                                <images src="http://placehold.it/570x380" data-at2x="http://placehold.it/570x380" alt>
+                                <img src="http://placehold.it/570x380" data-at2x="http://placehold.it/570x380" alt>
                             </div>
                             <div class="gallery-item picture">
-                                <images src="http://placehold.it/570x380" data-at2x="http://placehold.it/570x380" alt>
+                                <img src="http://placehold.it/570x380" data-at2x="http://placehold.it/570x380" alt>
                             </div>
                         </div>
                     </div>
@@ -375,7 +375,7 @@
         <div class="parallaxed">
             <div class="parallax-image" data-parallax-left="0.5" data-parallax-top="0.3"
                  data-parallax-scroll-speed="0.5">
-                <images src="images/parallax.png" alt="">
+                <img src="images/parallax.png" alt="">
             </div>
             <div class="them-mask bg-color-2"></div>
             <div class="grid-row center-text">
@@ -398,7 +398,7 @@
                 <div class="grid-col grid-col-6">
                     <div class="item-instructor bg-color-1">
                         <a href="page-profile.html" class="instructor-avatar">
-                            <images src="http://placehold.it/210x220" data-at2x="http://placehold.it/210x220" alt>
+                            <img src="http://placehold.it/210x220" data-at2x="http://placehold.it/210x220" alt>
                         </a>
                         <div class="info-box">
                             <h3>Jenny Doe</h3>
@@ -414,7 +414,7 @@
                     </div>
                     <div class="item-instructor bg-color-3">
                         <a href="page-profile.html" class="instructor-avatar">
-                            <images src="http://placehold.it/210x220" data-at2x="http://placehold.it/210x220" alt>
+                            <img src="http://placehold.it/210x220" data-at2x="http://placehold.it/210x220" alt>
                         </a>
                         <div class="info-box">
                             <h3>John Doe</h3>
@@ -432,7 +432,7 @@
                 <div class="grid-col grid-col-6">
                     <div class="item-instructor bg-color-2">
                         <a href="page-profile.html" class="instructor-avatar">
-                            <images src="http://placehold.it/210x220" data-at2x="http://placehold.it/210x220" alt>
+                            <img src="http://placehold.it/210x220" data-at2x="http://placehold.it/210x220" alt>
                         </a>
                         <div class="info-box">
                             <h3>James Doe</h3>
@@ -448,7 +448,7 @@
                     </div>
                     <div class="item-instructor bg-color-6">
                         <a href="page-profile.html" class="instructor-avatar">
-                            <images src="http://placehold.it/210x220" data-at2x="http://placehold.it/210x220" alt>
+                            <img src="http://placehold.it/210x220" data-at2x="http://placehold.it/210x220" alt>
                         </a>
                         <div class="info-box">
                             <h3>Jade Doe</h3>
@@ -502,7 +502,7 @@
         <div class="parallaxed">
             <div class="parallax-image" data-parallax-left="0.5" data-parallax-top="0.3"
                  data-parallax-scroll-speed="0.5">
-                <images src="images/parallax.png" alt="">
+                <img src="images/parallax.png" alt="">
             </div>
             <div class="them-mask bg-color-3"></div>
             <div class="grid-row center-text">
@@ -559,13 +559,13 @@
         <!-- / section -->
         <hr class="divider-color"/>
         <!-- section -->
-        <section class="fullwidth-background testimonial padding-section">
+        {{--<section class="fullwidth-background testimonial padding-section">
             <div class="grid-row">
                 <h2 class="center-text">Testimonials</h2>
                 <div class="owl-carousel testimonials-carousel">
                     <div class="gallery-item">
                         <div class="quote-avatar-author clear-fix">
-                            <images src="http://placehold.it/94x94" data-at2x="http://placehold.it/94x94" alt="">
+                            <img src="http://placehold.it/94x94" data-at2x="http://placehold.it/94x94" alt="">
                                 <div class="author-info">Karl Doe<br><span>Writer</span></div>
                         </div>
                         <p>Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo
@@ -576,7 +576,7 @@
                     </div>
                     <div class="gallery-item">
                         <div class="quote-avatar-author clear-fix">
-                            <images src="http://placehold.it/94x94" data-at2x="http://placehold.it/94x94" alt="">
+                            <img src="http://placehold.it/94x94" data-at2x="http://placehold.it/94x94" alt="">
                                 <div class="author-info">Karl Doe<br><span>Writer</span></div>
                         </div>
                         <p>Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo
@@ -587,7 +587,7 @@
                     </div>
                     <div class="gallery-item">
                         <div class="quote-avatar-author clear-fix">
-                            <images src="http://placehold.it/94x94" data-at2x="http://placehold.it/94x94" alt="">
+                            <img src="http://placehold.it/94x94" data-at2x="http://placehold.it/94x94" alt="">
                                 <div class="author-info">Karl Doe<br><span>Writer</span></div>
                         </div>
                         <p>Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo
@@ -598,12 +598,12 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section>--}}
         <!-- / section -->
         <!-- google map -->
-        <div class="wow fadeInUp">
+        {{--<div class="wow fadeInUp">
             <div id="map" class="google-map"></div>
-        </div>
+        </div>--}}
         <!-- / google map -->
     </div>
     
