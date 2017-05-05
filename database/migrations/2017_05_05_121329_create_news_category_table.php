@@ -6,6 +6,7 @@ use Illuminate\Database\Migrations\Migration;
 class CreateNewsCategoryTable extends Migration
 {
     protected $tableName = 'news_category';
+
     /**
      * Run the migrations.
      *
@@ -15,7 +16,10 @@ class CreateNewsCategoryTable extends Migration
     {
         Schema::create($this->tableName, function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('answer_id');
+
+            $table->integer('news_id')->unsigned();
+            $table->foreign('news_id')->references('id')->on('news');
+
             $table->integer('category_id');
             $table->timestamps();
         });

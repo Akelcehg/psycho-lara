@@ -18,6 +18,7 @@ class CreateNewsTable extends Migration
         Schema::create($this->tableName, function (Blueprint $table) {
             $table->increments('id');
 
+            $table->string('header_image');
             $table->string('header');
             $table->longText('text');
 
