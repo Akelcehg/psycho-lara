@@ -14,6 +14,10 @@
 Route::get('/', function () {
     return view('index');
 });
+Route::get('/forum', function () {
+    return view('forum');
+});
+
 
 Route::get('/calendar', function () {
     return view('event-calendar');
