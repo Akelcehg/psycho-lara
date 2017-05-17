@@ -56,8 +56,8 @@
         <div class="sticky-menu">
             <div class="grid-row clear-fix">
                 <!-- logo -->
-                <a href="index.html" class="logo">
-                    <images src="images/logo.png" data-at2x="images/logo@2x.png" alt>
+                <a href="/" class="logo">
+                    <img src="/images/logo.png" data-at2x="images/logo@2x.png" alt>
                         <h1>uniLearn</h1>
                 </a>
                 <!-- / logo -->

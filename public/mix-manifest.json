@@ -8,9 +8,5 @@
   "/css/select2.css": "/css/select2.css",
   "/js/libs/select2.js": "/js/libs/select2.js",
   "/js/libs/owl.carousel.js": "/js/libs/owl.carousel.js",
-  "/js/libs/main.js": "/js/libs/main.js",
-  "/js/libs/jquery.fancybox.pack.js": "/js/libs/jquery.fancybox.pack.js",
-  "/js/libs/jquery.fancybox-media.js": "/js/libs/jquery.fancybox-media.js",
-  "/js/libs/cws_self_vimeo_bg.js": "/js/libs/cws_self_vimeo_bg.js",
-  "/js/libs/cws_YT_bg.js": "/js/libs/cws_YT_bg.js"
+  "/js/libs/main.js": "/js/libs/main.js"
 }

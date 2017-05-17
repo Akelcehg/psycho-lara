@@ -18,6 +18,10 @@ Route::get('/forum', function () {
     return view('forum');
 });
 
+Route::get('/blog', function () {
+    return view('blog');
+});
+
 
 Route::get('/calendar', function () {
     return view('event-calendar');
@@ -31,10 +35,10 @@ Route::get('/month', function () {
     return view('month');
 });
 
-    Auth::routes();
+Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
-Route::get('/task',function(){
+Route::get('/task', function () {
     return view('tasks');
 });
