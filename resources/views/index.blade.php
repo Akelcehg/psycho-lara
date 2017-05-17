@@ -499,7 +499,7 @@
         </section>
         <!-- / section -->
         <!-- parallax section -->
-        <div class="parallaxed">
+       {{-- <div class="parallaxed">
             <div class="parallax-image" data-parallax-left="0.5" data-parallax-top="0.3"
                  data-parallax-scroll-speed="0.5">
                 <img src="images/parallax.png" alt="">
@@ -510,7 +510,7 @@
                 <div class="twitter-1"></div>
                 <!-- / twitter -->
             </div>
-        </div>
+        </div>--}}
         <!-- parallax section -->
         <!-- section -->
         <section class="padding-section">

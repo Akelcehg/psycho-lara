@@ -1024,30 +1024,30 @@ $(document).ready(function () {
       disableProgressBar: "on"
     });
   }
-  $('.tp-banner-slider').on("revolution.slide.onloaded", function (e) {
-    $('.tp-banner-slider').css("opacity", "1");
-  });
-  if (jQuery('.tp-banner-slider').length) {
-    jQuery('.tp-banner-slider').revolution({
-      responsiveLevels: [4096, 1025, 778, 480],
-      dottedOverlay: "custom",
-      delay: 9000,
-      startwidth: 1170,
-      startheight: 660,
-      hideThumbs: 10,
-      navigation: {
-        arrows: { enable: true }
-      },
-      fullWidth: "on",
-      forceFullWidth: "on",
-      hideThumbsOnMobile: "off",
-      hideNavDelayOnMobile: 1500,
-      hideBulletsOnMobile: "off",
-      hideArrowsOnMobile: "off",
-      hideThumbsUnderResolution: 0,
-      navigationType: "none"
-    });
-  }
+  /*  $('.tp-banner-slider').on("revolution.slide.onloaded",function (e) {
+      $('.tp-banner-slider').css("opacity","1");
+    });*/
+  /*  if ( jQuery('.tp-banner-slider').length ) {
+      jQuery('.tp-banner-slider').revolution({
+        responsiveLevels:[4096,1025,778,480],
+        dottedOverlay:"custom",
+        delay:9000,
+        startwidth:1170,
+        startheight:660,
+        hideThumbs:10,
+        navigation: {
+            arrows:{enable:true}        
+        },
+        fullWidth:"on",
+        forceFullWidth:"on",
+        hideThumbsOnMobile:"off",
+        hideNavDelayOnMobile:1500,            
+        hideBulletsOnMobile:"off",
+        hideArrowsOnMobile:"off",
+        hideThumbsUnderResolution:0,
+        navigationType:"none"
+      });
+    }*/
 
   /**/
   /********   Carousel   *********/
@@ -1604,48 +1604,57 @@ if ($(".contact-form").length) {
   /**/
 
   /* validate the contact form fields */
-  $(".contact-form").each(function () {
-
-    $(this).validate( /*feedback-form*/{
-      onkeyup: false,
-      onfocusout: false,
-      errorElement: 'p',
-      errorLabelContainer: $(this).parent().children(".alert-boxes.error-alert").children(".message"),
-      rules: {
-        name: {
-          required: true
+  /*$(".contact-form").each(function(){
+      $(this).validate(  /!*feedback-form*!/{
+        onkeyup: false,
+        onfocusout: false,
+        errorElement: 'p',
+        errorLabelContainer: $(this).parent().children(".alert-boxes.error-alert").children(".message"),
+        rules:
+        {
+          name:
+          {
+            required: true
+          },
+          email:
+          {
+            required: true,
+            email: true
+          },
+          message:
+          {
+            required: true
+          }
         },
-        email: {
-          required: true,
-          email: true
+        messages:
+        {
+          name:
+          {
+            required: 'Please enter your name',
+          },
+          email:
+          {
+            required: 'Please enter your email address',
+            email: 'Please enter a VALID email address'
+          },
+          message:
+          {
+            required: 'Please enter your message'
+          }
         },
-        message: {
-          required: true
+        invalidHandler: function()
+        {
+          $(this).parent().children(".alert-boxes.error-alert").slideDown('fast');
+          $("#feedback-form-success").slideUp('fast');
+          },
+        submitHandler: function(form)
+        {   
+          $(form).parent().children(".alert-boxes.error-alert").slideUp('fast');  
+          var $form = $(form).ajaxSubmit();
+          submit_handler($form, $(form).parent().children(".email_server_responce") );
         }
-      },
-      messages: {
-        name: {
-          required: 'Please enter your name'
-        },
-        email: {
-          required: 'Please enter your email address',
-          email: 'Please enter a VALID email address'
-        },
-        message: {
-          required: 'Please enter your message'
-        }
-      },
-      invalidHandler: function invalidHandler() {
-        $(this).parent().children(".alert-boxes.error-alert").slideDown('fast');
-        $("#feedback-form-success").slideUp('fast');
-      },
-      submitHandler: function submitHandler(form) {
-        $(form).parent().children(".alert-boxes.error-alert").slideUp('fast');
-        var $form = $(form).ajaxSubmit();
-        submit_handler($form, $(form).parent().children(".email_server_responce"));
-      }
-    });
-  });
+      });
+    })*/
 
   /* Ajax, Server response */
   var submit_handler = function submit_handler(form, wrapper) {

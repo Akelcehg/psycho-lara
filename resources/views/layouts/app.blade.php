@@ -273,12 +273,12 @@
 {{--<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 <script type="text/javascript"
         src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/infobox/src/infobox_packed.js"></script>--}}
-<script type='text/javascript' src='js/libs/jquery.validate.min.js'></script>
-<script src="js/libs/jquery.form.min.js"></script>
+{{--<script type='text/javascript' src='js/libs/jquery.validate.min.js'></script>
+<script src="js/libs/jquery.form.min.js"></script>--}}
 <script src="js/libs/TweenMax.min.js"></script>
 <script src="js/libs/main.js"></script>
 <!-- jQuery REVOLUTION Slider  -->
-<script type="text/javascript" src="js/libs/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+{{--<script type="text/javascript" src="js/libs/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
 <script type="text/javascript" src="js/libs/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
 <script type="text/javascript" src="js/libs/rs-plugin/js/extensions/revolution.extension.video.min.js"></script>
 <script type="text/javascript" src="js/libs/rs-plugin/js/extensions/revolution.extension.slideanims.min.js"></script>
@@ -289,13 +289,16 @@
 <script type="text/javascript" src="js/libs/rs-plugin/js/extensions/revolution.extension.navigation.min.js"></script>
 <script type="text/javascript" src="js/libs/rs-plugin/js/extensions/revolution.extension.migration.min.js"></script>
 <script type="text/javascript" src="js/libs/rs-plugin/js/extensions/revolution.extension.parallax.min.js"></script>
-<script src="js/libs/jquery.isotope.min.js"></script>
+<script src="js/libs/jquery.isotope.min.js"></script>--}}
 
+
+<script src="js/libs/owl.carousel.js"></script>
+{{--
 <script src="js/libs/owl.carousel.js"></script>
 <script src="js/libs/jquery-ui.min.js"></script>
 <script src="js/libs/jflickrfeed.min.js"></script>
 <script src="js/libs/jquery.fancybox.pack.js"></script>
 <script src="js/libs/jquery.fancybox-media.js"></script>
-<script src="js/libs/retina.min.js"></script>
+<script src="js/libs/retina.min.js"></script>--}}
 </body>
 </html>

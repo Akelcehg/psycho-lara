@@ -34,3 +34,7 @@ Route::get('/month', function () {
     Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+
+Route::get('/task',function(){
+    return view('tasks');
+});
