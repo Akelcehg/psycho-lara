@@ -58,7 +58,7 @@
                 <!-- logo -->
                 <a href="/" class="logo">
                     <img src="/images/logo.png" data-at2x="images/logo@2x.png" alt>
-                        <h1>uniLearn</h1>
+                    <h1>uniLearn</h1>
                 </a>
                 <!-- / logo -->
                 <nav class="main-nav">
@@ -291,7 +291,7 @@
 <script type="text/javascript" src="js/libs/rs-plugin/js/extensions/revolution.extension.parallax.min.js"></script>
 <script src="js/libs/jquery.isotope.min.js"></script>--}}
 
-
+<script src="js/libs/jquery-ui.min.js"></script>
 <script src="js/libs/owl.carousel.js"></script>
 {{--
 <script src="js/libs/owl.carousel.js"></script>

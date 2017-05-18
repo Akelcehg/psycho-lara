@@ -16,7 +16,7 @@ const Task = mix.Task;
 
 mix.copy('resources/assets/js/libs/TweenMax.min.js', 'public/js/libs');
 //mix.copy('resources/assets/js/libs/retina.min.js', 'public/js/libs');
-//mix.copy('resources/assets/js/libs/jquery-ui.min.js', 'public/js/libs');
+mix.copy('resources/assets/js/libs/jquery-ui.min.js', 'public/js/libs');
 //mix.copy('resources/assets/js/libs/jquery.validate.min.js', 'public/js/libs');
 mix.copy('resources/assets/js/libs/jquery.min.js', 'public/js/libs');
 //mix.copy('resources/assets/js/libs/jquery.isotope.min.js', 'public/js/libs');
