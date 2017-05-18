@@ -14,6 +14,9 @@
 Route::get('/', function () {
     return view('index.page');
 });
+Route::get('/blank', function () {
+    return view('blank');
+});
 Route::get('/forum', function () {
     return view('forum.page');
 });
@@ -21,7 +24,6 @@ Route::get('/forum', function () {
 Route::get('/blog', function () {
     return view('blog');
 });
-
 
 Route::get('/calendar', function () {
     return view('event-calendar');
