@@ -434,11 +434,11 @@
 				</aside>
 				<!-- / widget archive -->
 				<!-- widget flickr -->
-				<aside class="widget-flickr">
+				{{--<aside class="widget-flickr">
 					<h2>Flickr</h2>
 					<hr class="divider-big margin-bottom" />
 					<ul id="flickr-badge" class="clear-fix"></ul>
-				</aside>
+				</aside>--}}
 				<!-- / widget flickr -->
 				<!-- widget text -->
 				<aside class="widget-text">

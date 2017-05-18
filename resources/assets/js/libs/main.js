@@ -946,14 +946,14 @@ $(document).ready(function() {
   /**/
   /* fancybox */
   /**/
-  if ($(".fancy").length) {
+  /*if ($(".fancy").length) {
     $(".fancy").fancybox();
     $('.fancybox').fancybox({
       helpers: {
         media: {}
       }
     });
-  }
+  }*/
 
   /**/
   /* revolution slider */
@@ -1313,7 +1313,7 @@ $(document).ready(function() {
   /**/
   /*flickr widget*/
   /**/
-  if($('ul#flickr-badge').length) {
+  /*if($('ul#flickr-badge').length) {
     jQuery('ul#flickr-badge').jflickrfeed({
       limit: 6,
       qstrings: {
@@ -1321,7 +1321,7 @@ $(document).ready(function() {
     },
     itemTemplate: '<li><div class="flickr-container"><a href="http://www.flickr.com/photos/56342020@N03"><span><img src="{{image_m}}" alt="{{title}}" /></span></a></div></li>'
     });
-  };
+  };*/
 
   /**/
   /***********   twitter   ********/
