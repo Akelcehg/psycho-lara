@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('index.page');
 });
 Route::get('/forum', function () {
-    return view('forum');
+    return view('forum.page');
 });
 
 Route::get('/blog', function () {
