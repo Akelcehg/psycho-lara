@@ -2,15 +2,38 @@
     <ul class="clear-fix">
         <li>
             <a href="index.html" class="active">Home</a>
+        </li>
+        <li>
+            <a href="index.html" class="active">Home</a>
+        </li>
+        <li>
+            <a href="index.html" class="active">Home</a>
+        </li>
+        <li>
+            <a href="index.html" class="active">Home</a>
+        </li>
+        <li>
+            <a href="index.html" class="active">Home</a>
+        </li>
+        <li>
+            <a href="index.html" class="active">Home</a>
+        </li>
+        <li>
+            <a href="index.html" class="active">Home</a>
+        </li>
+
+
+        {{--<li>
+            <a href="index.html" class="active">Home</a>
             <!-- sub menu -->
-            <ul>
+            --}}{{--<ul>
                 <li><a href="index.html" class="active">Full-Width Slider</a></li>
                 <li><a href="index-fullscreen.html">Full-Screen Slider</a></li>
                 <li><a href="index-bg-video.html">Video Slider</a></li>
-            </ul>
+            </ul>--}}{{--
             <!-- / sub menu -->
-        </li>
-        <li class="megamenu">
+        </li>--}}
+        {{--<li class="megamenu">
             <a href="content-elements.html">Features</a>
             <!-- sub mega menu -->
             <ul class="clear-fix">
@@ -98,6 +121,6 @@
         </li>
         <li>
             <a href="contact-us.html">Contact Us</a>
-        </li>
+        </li>--}}
     </ul>
 </nav>
