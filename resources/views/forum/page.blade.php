@@ -2,18 +2,20 @@
 
 @section('content')
     <header>
-        <div class="page-title">ow-right"></i>
-                    <a href="">Pages</a>
-                    <div class="grid-row">
-                        <h1>Page 404</h1>
-                        <nav class="bread-crumb">
-                            <a href="index.html">Home</a>
-                            <i class="fa fa-long-arrow-right"></i>
-                            <a href="content-elements.html">Features</a>
-                            <i class="fa fa-long-arr
+        <div class="page-title">
+            <div class="grid-row">
+                <h1>Blog</h1>
+                <!-- bread crumb -->
+                <nav class="bread-crumb">
+                    <a href="index.html">Home</a>
                     <i class="fa fa-long-arrow-right"></i>
-                    <a href="">Page 404</a>
+                    <a href="content-elements.html">Features</a>
+                    <i class="fa fa-long-arrow-right"></i>
+                    <a href="">Blog</a>
+                    <i class="fa fa-long-arrow-right"></i>
+                    <a href="">Full width</a>
                 </nav>
+                <!-- / bread crumb -->
             </div>
         </div>
     </header>
@@ -22,13 +24,15 @@
 
         <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
         <style>
-            body{margin-top:20px;
-                background:#eee;
+            body {
+                margin-top: 20px;
+                background: #eee;
             }
 
             .white-bg {
                 background-color: #ffffff;
             }
+
             .page-heading {
                 border-top: 0;
                 padding: 0 10px 20px 10px;
@@ -39,120 +43,142 @@
                 padding: 20px 10px 20px 10px;
                 border-bottom: 1px solid #f1f1f1;
             }
+
             .forum-avatar {
                 float: left;
                 margin-right: 20px;
                 text-align: center;
                 width: 110px;
             }
+
             .forum-avatar .img-circle {
                 height: 48px;
                 width: 48px;
             }
+
             .author-info {
                 color: #676a6c;
                 font-size: 11px;
                 margin-top: 5px;
                 text-align: center;
             }
+
             .forum-post-info {
                 padding: 9px 12px 6px 12px;
                 background: #f9f9f9;
                 border: 1px solid #f1f1f1;
             }
+
             .media-body > .media {
                 background: #f9f9f9;
                 border-radius: 3px;
                 border: 1px solid #f1f1f1;
             }
+
             .forum-post-container .media-body .photos {
                 margin: 10px 0;
             }
+
             .forum-photo {
                 max-width: 140px;
                 border-radius: 3px;
             }
+
             .media-body > .media .forum-avatar {
                 width: 70px;
                 margin-right: 10px;
             }
+
             .media-body > .media .forum-avatar .img-circle {
                 height: 38px;
                 width: 38px;
             }
+
             .mid-icon {
                 font-size: 66px;
             }
+
             .forum-item {
                 margin: 10px 0;
                 padding: 10px 0 20px;
                 border-bottom: 1px solid #f1f1f1;
             }
+
             .views-number {
                 font-size: 24px;
                 line-height: 18px;
                 font-weight: 400;
             }
+
             .forum-container,
             .forum-post-container {
                 padding: 30px !important;
             }
+
             .forum-item small {
                 color: #999;
             }
+
             .forum-item .forum-sub-title {
                 color: #999;
                 margin-left: 50px;
             }
+
             .forum-title {
                 margin: 15px 0 15px 0;
             }
+
             .forum-info {
                 text-align: center;
             }
+
             .forum-desc {
                 color: #999;
             }
+
             .forum-icon {
                 float: left;
                 width: 30px;
                 margin-right: 20px;
                 text-align: center;
             }
+
             a.forum-item-title {
                 color: inherit;
                 display: block;
                 font-size: 18px;
                 font-weight: 600;
             }
+
             a.forum-item-title:hover {
                 color: inherit;
             }
+
             .forum-icon .fa {
                 font-size: 30px;
                 margin-top: 8px;
                 color: #9b9b9b;
             }
+
             .forum-item.active .fa {
                 color: #1ab394;
             }
+
             .forum-item.active a.forum-item-title {
                 color: #1ab394;
             }
+
             @media (max-width: 992px) {
                 .forum-info {
                     margin: 15px 0 10px 0;
                     /* Comment this is you want to show forum info in small devices */
                     display: none;
                 }
+
                 .forum-desc {
                     float: none !important;
                 }
             }
-
-
-
-
 
             .ibox {
                 clear: both;
@@ -160,19 +186,24 @@
                 margin-top: 0;
                 padding: 0;
             }
+
             .ibox.collapsed .ibox-content {
                 display: none;
             }
+
             .ibox.collapsed .fa.fa-chevron-up:before {
                 content: "\f078";
             }
+
             .ibox.collapsed .fa.fa-chevron-down:before {
                 content: "\f077";
             }
+
             .ibox:after,
             .ibox:before {
                 display: table;
             }
+
             .ibox-title {
                 -moz-border-bottom-colors: none;
                 -moz-border-left-colors: none;
@@ -188,6 +219,7 @@
                 padding: 14px 15px 7px;
                 min-height: 48px;
             }
+
             .ibox-content {
                 background-color: #ffffff;
                 color: inherit;
@@ -197,6 +229,7 @@
                 border-style: solid solid none;
                 border-width: 1px 0;
             }
+
             .ibox-footer {
                 color: inherit;
                 border-top: 1px solid #e7eaec;
@@ -208,6 +241,7 @@
             .message-input {
                 height: 90px !important;
             }
+
             .form-control, .single-line {
                 background-color: #FFFFFF;
                 background-image: none;
@@ -220,12 +254,15 @@
                 width: 100%;
                 font-size: 14px;
             }
+
             .text-navy {
                 color: #1ab394;
             }
+
             .mid-icon {
                 font-size: 66px !important;
             }
+
             .m-b-sm {
                 margin-bottom: 10px;
             }</style>
@@ -261,7 +298,9 @@
                                             <i class="fa fa-shield"></i>
                                         </div>
                                         <a href="forum_post.html" class="forum-item-title">General Discussion</a>
-                                        <div class="forum-sub-title">Talk about sports, entertainment, music, movies, your favorite color, talk about enything.</div>
+                                        <div class="forum-sub-title">Talk about sports, entertainment, music, movies,
+                                            your favorite color, talk about enything.
+                                        </div>
                                     </div>
                                     <div class="col-md-1 forum-info">
                             <span class="views-number">
@@ -296,7 +335,9 @@
                                             <i class="fa fa-bolt"></i>
                                         </div>
                                         <a href="forum_post.html" class="forum-item-title">Introductions</a>
-                                        <div class="forum-sub-title">New to the community? Please stop by, say hi and tell us a bit about yourself. </div>
+                                        <div class="forum-sub-title">New to the community? Please stop by, say hi and
+                                            tell us a bit about yourself.
+                                        </div>
                                     </div>
                                     <div class="col-md-1 forum-info">
                             <span class="views-number">
@@ -331,7 +372,9 @@
                                             <i class="fa fa-calendar"></i>
                                         </div>
                                         <a href="forum_post.html" class="forum-item-title">Announcements</a>
-                                        <div class="forum-sub-title">This forum features announcements from the community staff. If there is a new post in this forum, please check it out. </div>
+                                        <div class="forum-sub-title">This forum features announcements from the
+                                            community staff. If there is a new post in this forum, please check it out.
+                                        </div>
                                     </div>
                                     <div class="col-md-1 forum-info">
                             <span class="views-number">
@@ -366,7 +409,9 @@
                                             <i class="fa fa-star"></i>
                                         </div>
                                         <a href="forum_post.html" class="forum-item-title">Staff Discussion</a>
-                                        <div class="forum-sub-title">This forum is for private, staff member only discussions, usually pertaining to the community itself. </div>
+                                        <div class="forum-sub-title">This forum is for private, staff member only
+                                            discussions, usually pertaining to the community itself.
+                                        </div>
                                     </div>
                                     <div class="col-md-1 forum-info">
                             <span class="views-number">
@@ -408,8 +453,12 @@
                                         <div class="forum-icon">
                                             <i class="fa fa-clock-o"></i>
                                         </div>
-                                        <a href="forum_post.html" class="forum-item-title">Lorem Ipsum is simply dummy text. </a>
-                                        <div class="forum-sub-title">Various versions have evolved over the years, sometimes by accident, sometimes on purpose passage of Lorem Ipsum (injected humour and the like).</div>
+                                        <a href="forum_post.html" class="forum-item-title">Lorem Ipsum is simply dummy
+                                            text. </a>
+                                        <div class="forum-sub-title">Various versions have evolved over the years,
+                                            sometimes by accident, sometimes on purpose passage of Lorem Ipsum (injected
+                                            humour and the like).
+                                        </div>
                                     </div>
                                     <div class="col-md-1 forum-info">
                             <span class="views-number">
@@ -443,8 +492,12 @@
                                         <div class="forum-icon">
                                             <i class="fa fa-bomb"></i>
                                         </div>
-                                        <a href="forum_post.html" class="forum-item-title">There are many variations of passages</a>
-                                        <div class="forum-sub-title"> If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the . </div>
+                                        <a href="forum_post.html" class="forum-item-title">There are many variations of
+                                            passages</a>
+                                        <div class="forum-sub-title"> If you are going to use a passage of Lorem Ipsum,
+                                            you need to be sure there isn't anything embarrassing hidden in the middle
+                                            of text. All the Lorem Ipsum generators on the .
+                                        </div>
                                     </div>
                                     <div class="col-md-1 forum-info">
                             <span class="views-number">
@@ -478,8 +531,12 @@
                                         <div class="forum-icon">
                                             <i class="fa fa-bookmark"></i>
                                         </div>
-                                        <a href="forum_post.html" class="forum-item-title">The standard chunk of Lorem Ipsum</a>
-                                        <div class="forum-sub-title">Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</div>
+                                        <a href="forum_post.html" class="forum-item-title">The standard chunk of Lorem
+                                            Ipsum</a>
+                                        <div class="forum-sub-title">Ipsum generators on the Internet tend to repeat
+                                            predefined chunks as necessary, making this the first true generator on the
+                                            Internet.
+                                        </div>
                                     </div>
                                     <div class="col-md-1 forum-info">
                             <span class="views-number">
@@ -513,8 +570,11 @@
                                         <div class="forum-icon">
                                             <i class="fa fa-ambulance"></i>
                                         </div>
-                                        <a href="forum_post.html" class="forum-item-title">Lorem Ipsum, you need to be sure there</a>
-                                        <div class="forum-sub-title">Internet tend to repeat predefined chunks as necessary, making this the</div>
+                                        <a href="forum_post.html" class="forum-item-title">Lorem Ipsum, you need to be
+                                            sure there</a>
+                                        <div class="forum-sub-title">Internet tend to repeat predefined chunks as
+                                            necessary, making this the
+                                        </div>
                                     </div>
                                     <div class="col-md-1 forum-info">
                             <span class="views-number">
