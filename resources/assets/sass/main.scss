@@ -2,6 +2,97 @@
 
 @import url(http://fonts.googleapis.com/css?family=Merriweather:300,400,700,800,900);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,600,700);
+/* Код для подключения шрифта в /css/stylename.css */
+
+@font-face {
+	font-family: "RalewayRegular";
+	src: url("../fonts/RalewayRegular/RalewayRegular.eot");
+	src: url("../fonts/RalewayRegular/RalewayRegular.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/RalewayRegular/RalewayRegular.woff") format("woff"),
+	url("../fonts/RalewayRegular/RalewayRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "RalewayThin";
+	src: url("../fonts/RalewayThin/RalewayThin.eot");
+	src: url("../fonts/RalewayThin/RalewayThin.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/RalewayThin/RalewayThin.woff") format("woff"),
+	url("../fonts/RalewayThin/RalewayThin.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "RalewayExtraLight";
+	src: url("../fonts/RalewayExtraLight/RalewayExtraLight.eot");
+	src: url("../fonts/RalewayExtraLight/RalewayExtraLight.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/RalewayExtraLight/RalewayExtraLight.woff") format("woff"),
+	url("../fonts/RalewayExtraLight/RalewayExtraLight.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "RalewayLight";
+	src: url("../fonts/RalewayLight/RalewayLight.eot");
+	src: url("../fonts/RalewayLight/RalewayLight.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/RalewayLight/RalewayLight.woff") format("woff"),
+	url("../fonts/RalewayLight/RalewayLight.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "RalewayMedium";
+	src: url("../fonts/RalewayMedium/RalewayMedium.eot");
+	src: url("../fonts/RalewayMedium/RalewayMedium.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/RalewayMedium/RalewayMedium.woff") format("woff"),
+	url("../fonts/RalewayMedium/RalewayMedium.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "RalewaySemiBold";
+	src: url("../fonts/RalewaySemiBold/RalewaySemiBold.eot");
+	src: url("../fonts/RalewaySemiBold/RalewaySemiBold.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/RalewaySemiBold/RalewaySemiBold.woff") format("woff"),
+	url("../fonts/RalewaySemiBold/RalewaySemiBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "RalewayBold";
+	src: url("../fonts/RalewayBold/RalewayBold.eot");
+	src: url("../fonts/RalewayBold/RalewayBold.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/RalewayBold/RalewayBold.woff") format("woff"),
+	url("../fonts/RalewayBold/RalewayBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "RalewayExtraBold";
+	src: url("../fonts/RalewayExtraBold/RalewayExtraBold.eot");
+	src: url("../fonts/RalewayExtraBold/RalewayExtraBold.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/RalewayExtraBold/RalewayExtraBold.woff") format("woff"),
+	url("../fonts/RalewayExtraBold/RalewayExtraBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "RalewayBlack";
+	src: url("../fonts/RalewayBlack/RalewayBlack.eot");
+	src: url("../fonts/RalewayBlack/RalewayBlack.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/RalewayBlack/RalewayBlack.woff") format("woff"),
+	url("../fonts/RalewayBlack/RalewayBlack.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
 
 html, body {
 	width: 100%;
@@ -87,7 +178,7 @@ audio::-webkit-media-controls-panel, video::-webkit-media-controls-panel {
 }
 
 body {
-	font-family: 'Raleway';
+	font-family: 'RalewayRegular';
 	color: #595959;
 	font-weight: 400;
 	font-size: 15px;
@@ -367,7 +458,7 @@ q b {
 	color: $color1;
 	font-style: normal;
 	text-transform: none;
-	font-family: 'Raleway';
+	font-family: 'RalewayRegular';
 	font-weight: 500;
 }
 q:before,
@@ -1121,7 +1212,7 @@ header:before{
 	margin-top: 60px;
 	font-size: 30px;
 	font-weight: 400;
-	font-family: 'Raleway';
+	font-family: 'RalewayRegular';
 	color: $color1;
 	background-color: #f0f0f0;
 	padding: 0 50px;

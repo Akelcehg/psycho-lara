@@ -180,7 +180,7 @@
 								<img src="http://placehold.it/870x426" data-at2x="http://placehold.it/870x426" class="columns-col-12" alt>
 							</div>
 							<h3>Donec mollis magna quis urna convallisquis</h3>
-							<p>Ut hendrerit mattis justo at suscipit. Praesent sagittis magna nec neque viverra lobortis. Proin eleifend neque venenatis facilisis cursus. Cras lobortis consequat lorem a porta. Sed condimentum erat non leo euismod, non tristique lectus elementum. Donec posuere dignissim nulla. Morbi vel molestie massa, vitae scelerisque ligula. Proin euismod tortor rutrum purus porta imperdiet. Pellentesque vitae metus in lorem posuere sagittis.</p>
+							<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>
 							<div class="tags-post">
 								<a href="#" rel="tag">Online Materials</a><!-- 
 							 --><a href="#" rel="tag">Featured, Education</a>

@@ -1,10 +1,10 @@
 <nav class="main-nav">
     <ul class="clear-fix">
         <li>
-            <a href="/" class="active">Home</a>
+            <a href="/" class="active">Главная</a>
         </li>
         <li>
-            <a href="/blog" class="active">Blog</a>
+            <a href="/blog" class="active">Статьи</a>
         </li>
         <li>
             <a href="index.html" class="active">Home</a>
