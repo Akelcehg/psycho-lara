@@ -19,7 +19,7 @@
             </div>
         </div>
     </header>
-    <div class="page-content container clear-fix">
+    <div class="page-content container-fluid clear-fix">
 
 
         <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
@@ -267,7 +267,7 @@
                 margin-bottom: 10px;
             }</style>
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="wrapper wrapper-content animated fadeInRight">
