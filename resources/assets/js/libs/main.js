@@ -867,52 +867,52 @@ $(function(){
 /*   carousel function for event container   */
 /**/
 function carousel_init (url){
- jQuery("."+url+"").each(function (){
-    jQuery(this).owlCarousel({
-    itemsCustom : [
-      [0, 1],
-      [738, 1],
-      [980, 1],
-      [1170, 1],
-    ],
-    navigation: false,
-    slideSpeed: 700,
-    pagination:false,
+    jQuery("."+url+"").each(function (){
+        jQuery(this).owlCarousel({
+            itemsCustom : [
+                [0, 1],
+                [738, 1],
+                [980, 1],
+                [1170, 1],
+            ],
+            navigation: false,
+            slideSpeed: 700,
+            pagination:false,
+        });
+        var owl = jQuery(this);
+        jQuery(this).parents(".container").find(".buttons-carousel").each(function (){
+            jQuery(this).children(".button-right").on( 'click', function(){
+                owl.trigger('owl.next');
+            })
+            jQuery(this).children(".button-left").on( 'click', function (){
+                owl.trigger('owl.prev');
+            });
+        });
     });
-  var owl = jQuery(this);
-  jQuery(this).parents(".container").find(".buttons-carousel").each(function (){
-   jQuery(this).children(".button-right").on( 'click', function(){
-    owl.trigger('owl.next');
-   })
-   jQuery(this).children(".button-left").on( 'click', function (){
-    owl.trigger('owl.prev');
-   });
-  });
- });
 }
 function carousel_init_list (url){
- jQuery("."+url+"").each(function (){
-    jQuery(this).owlCarousel({
-    itemsCustom : [
-      [0, 1],
-      [738, 1],
-      [980, 1],
-      [1170, 1],
-    ],
-    navigation: false,
-    slideSpeed: 700,
-    pagination:false,
+    jQuery("."+url+"").each(function (){
+        jQuery(this).owlCarousel({
+            itemsCustom : [
+                [0, 1],
+                [738, 1],
+                [980, 1],
+                [1170, 1],
+            ],
+            navigation: false,
+            slideSpeed: 700,
+            pagination:false,
+        });
+        var owl = jQuery(this);
+        jQuery(this).parents(".container").find(".buttons-carousel").each(function (){
+            jQuery(this).children(".button-right").on( 'click', function(){
+                owl.trigger('owl.next');
+            })
+            jQuery(this).children(".button-left").on( 'click', function (){
+                owl.trigger('owl.prev');
+            });
+        });
     });
-  var owl = jQuery(this);
-  jQuery(this).parents(".container").find(".buttons-carousel").each(function (){
-   jQuery(this).children(".button-right").on( 'click', function(){
-    owl.trigger('owl.next');
-   })
-   jQuery(this).children(".button-left").on( 'click', function (){
-    owl.trigger('owl.prev');
-   });
-  });
- });
 }
 function cws_page_focus(){
  document.getElementsByTagName('html')[0].setAttribute('data-focus-chek', 'focused');
@@ -1189,63 +1189,68 @@ $(document).ready(function() {
   /**/
   if( $(".calendar-header").length ) {
     $(function(){
-      var event_content = {
+
+        var event_content = {
+            0:{view:"list-view-calendar", container:"day-view-wrap" , carousel:"carousel-list-view.html"},
+            1:{view:"week-view", container: "week-view-wrap", carousel:"carousel-week-view.html"},
+            2:{view:"month" , container:"event-calendar", carousel:"carousel-month-view"}
+        };
+      /*var event_content = {
         0:{view:"/", container:"day-view-wrap" , carousel:"/"},
         1:{view:"/", container: "week-view-wrap", carousel:"/"},
-        2:{view:"/" , container:"event-calendar", carousel:"/"}
-      };
-      var i = 2;
-      var window_w = $(window).outerWidth();
-      var clicked_elem = $(".month-view");
-      qwer ();
-      $('.calendar-view').on( 'click', function(){
-        clicked_elem = $(this);
-        i = clicked_elem.index();
-        qwer();
-      });
-      function qwer(){
-        $.ajax({
-          type: "GET",
-          //url: event_content[i].view + ".html",
-          url: event_content[i].view,
-          cache: false,
-            success: function(html)
-            {
-              $(".event-container>.previous").remove();
-              $(".event-container>.current").removeClass("current").addClass("previous");
-              $('.calendar-view').removeClass("active");
-              clicked_elem.addClass('active');
-              //$(".event-container").append(html);
-              carousel_init(event_content[i].container);
-              $(".event-container").height($(".event-container>div:last-child").outerHeight(true));
-              $(window).resize(function(){
-                $(".event-container").height($(".event-container>div:last-child").outerHeight(true));
-              })
-              setTimeout(function(){
-                $(".event-container>div:last-child").addClass("current");
-              }, 400);
-            },
-            error: function(){
-              alert("Sorry this file invalid, or your url are wrong.")
-            }
+        2:{view:"/month" , container:"event-calendar", carousel:"/month"}
+      };*/
+        var i = 2;
+        var window_w = $(window).outerWidth();
+        var clicked_elem = $(".month-view");
+        qwer ();
+        $('.calendar-view').on( 'click', function(){
+            clicked_elem = $(this);
+            i = clicked_elem.index();
+            qwer();
         });
-        $.ajax({
-          type: "GET",
-          url: event_content[i].carousel,
-          cache: false,
-            success: function(html)
-            {
-              $(".calendar-header .buttons-carousel .calendar-list").remove();
-              $(".calendar-header .buttons-carousel .carousel-list").remove();
-              //$(".calendar-header .buttons-carousel").append(html);
-              carousel_init_list("carousel-list");
-            },
-            error: function(){
-              $(".calendar-header .buttons-carousel .carousel-list").remove();
-              $(".calendar-header .buttons-carousel").append("<div class='carousel-list'><i class='fa fa-calendar'></i> July 2015</div>");
-            }
-        });
-      };
+        function qwer(){
+            $.ajax({
+                type: "get",
+                url: event_content[i].view,
+                cache: false,
+                success: function(html)
+                {
+                    $(".event-container>.previous").remove();
+                    $(".event-container>.current").removeClass("current").addClass("previous");
+                    $('.calendar-view').removeClass("active");
+                    clicked_elem.addClass('active');
+                    $(".event-container").append(html);
+                    carousel_init(event_content[i].container);
+                    $(".event-container").height($(".event-container>div:last-child").outerHeight(true));
+                    $(window).resize(function(){
+                        $(".event-container").height($(".event-container>div:last-child").outerHeight(true));
+                    })
+                    setTimeout(function(){
+                        $(".event-container>div:last-child").addClass("current");
+                    }, 400);
+                },
+                error: function(){
+                    alert("Sorry this file invalid, or your url are wrong.")
+                }
+            });
+            $.ajax({
+                type: "get",
+                url: event_content[i].carousel,
+                cache: false,
+                success: function(html)
+                {
+                    $(".calendar-header .buttons-carousel .calendar-list").remove();
+                    $(".calendar-header .buttons-carousel .carousel-list").remove();
+                    $(".calendar-header .buttons-carousel").append(html);
+                    carousel_init_list("carousel-list");
+                },
+                error: function(){
+                    $(".calendar-header .buttons-carousel .carousel-list").remove();
+                    $(".calendar-header .buttons-carousel").append("<div class='carousel-list'><i class='fa fa-calendar'></i> July 2015</div>");
+                }
+            });
+        };
     });
   };
 

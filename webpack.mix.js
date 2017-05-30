@@ -14,16 +14,18 @@ const Task = mix.Task;
  |
  */
 
+//mix.browserSync('psycho-lara');
+
 mix.copy('resources/assets/js/libs/TweenMax.min.js', 'public/js/libs');
-//mix.copy('resources/assets/js/libs/retina.min.js', 'public/js/libs');
+mix.copy('resources/assets/js/libs/retina.min.js', 'public/js/libs');
 mix.copy('resources/assets/js/libs/jquery-ui.min.js', 'public/js/libs');
-//mix.copy('resources/assets/js/libs/jquery.validate.min.js', 'public/js/libs');
+mix.copy('resources/assets/js/libs/jquery.validate.min.js', 'public/js/libs');
 mix.copy('resources/assets/js/libs/jquery.min.js', 'public/js/libs');
-//mix.copy('resources/assets/js/libs/jquery.isotope.min.js', 'public/js/libs');
-//mix.copy('resources/assets/js/libs/jquery.form.min.js', 'public/js/libs');
-//mix.copy('resources/assets/js/libs/jflickrfeed.min.js', 'public/js/libs');
-//mix.copy('resources/assets/js/libs/bg-video/jquery.vimeo.api.min.js', 'public/js/libs');
-//mix.copy('resources/assets/js/libs/rs-plugin', 'public/js/libs/rs-plugin');
+mix.copy('resources/assets/js/libs/jquery.isotope.min.js', 'public/js/libs');
+mix.copy('resources/assets/js/libs/jquery.form.min.js', 'public/js/libs');
+mix.copy('resources/assets/js/libs/jflickrfeed.min.js', 'public/js/libs');
+mix.copy('resources/assets/js/libs/bg-video/jquery.vimeo.api.min.js', 'public/js/libs');
+mix.copy('resources/assets/js/libs/rs-plugin', 'public/js/libs/rs-plugin');
 
 mix.copy('resources/assets/sass/fi', 'public/css/fi');
 

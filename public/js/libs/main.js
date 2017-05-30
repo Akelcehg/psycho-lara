@@ -1149,11 +1149,17 @@ $(document).ready(function () {
   /**/
   if ($(".calendar-header").length) {
     $(function () {
+
       var event_content = {
-        0: { view: "/", container: "day-view-wrap", carousel: "/" },
-        1: { view: "/", container: "week-view-wrap", carousel: "/" },
-        2: { view: "/", container: "event-calendar", carousel: "/" }
+        0: { view: "list-view-calendar", container: "day-view-wrap", carousel: "carousel-list-view.html" },
+        1: { view: "week-view", container: "week-view-wrap", carousel: "carousel-week-view.html" },
+        2: { view: "month", container: "event-calendar", carousel: "carousel-month-view" }
       };
+      /*var event_content = {
+        0:{view:"/", container:"day-view-wrap" , carousel:"/"},
+        1:{view:"/", container: "week-view-wrap", carousel:"/"},
+        2:{view:"/month" , container:"event-calendar", carousel:"/month"}
+      };*/
       var i = 2;
       var window_w = $(window).outerWidth();
       var clicked_elem = $(".month-view");
@@ -1165,8 +1171,7 @@ $(document).ready(function () {
       });
       function qwer() {
         $.ajax({
-          type: "GET",
-          //url: event_content[i].view + ".html",
+          type: "get",
           url: event_content[i].view,
           cache: false,
           success: function success(html) {
@@ -1174,7 +1179,7 @@ $(document).ready(function () {
             $(".event-container>.current").removeClass("current").addClass("previous");
             $('.calendar-view').removeClass("active");
             clicked_elem.addClass('active');
-            //$(".event-container").append(html);
+            $(".event-container").append(html);
             carousel_init(event_content[i].container);
             $(".event-container").height($(".event-container>div:last-child").outerHeight(true));
             $(window).resize(function () {
@@ -1189,13 +1194,13 @@ $(document).ready(function () {
           }
         });
         $.ajax({
-          type: "GET",
+          type: "get",
           url: event_content[i].carousel,
           cache: false,
           success: function success(html) {
             $(".calendar-header .buttons-carousel .calendar-list").remove();
             $(".calendar-header .buttons-carousel .carousel-list").remove();
-            //$(".calendar-header .buttons-carousel").append(html);
+            $(".calendar-header .buttons-carousel").append(html);
             carousel_init_list("carousel-list");
           },
           error: function error() {

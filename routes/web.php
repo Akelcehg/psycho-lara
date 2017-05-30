@@ -26,7 +26,7 @@ Route::get('/blog', function () {
 });
 
 Route::get('/calendar', function () {
-    return view('event-calendar');
+    return view('event_c');
 });
 
 Route::get('/carousel-month-view', function () {
@@ -35,6 +35,9 @@ Route::get('/carousel-month-view', function () {
 
 Route::get('/month', function () {
     return view('month');
+});
+Route::get('/month-view', function () {
+    return view('carousel-month-view');
 });
 
 Auth::routes();
