@@ -7,7 +7,7 @@
             <a href="/blog" class="active">Статьи</a>
         </li>
         <li>
-            <a href="index.html" class="active">Home</a>
+            <a href="/calendar" class="active">События</a>
         </li>
         <li>
             <a href="index.html" class="active">Home</a>
