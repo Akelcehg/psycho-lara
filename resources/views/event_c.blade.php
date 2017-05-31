@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <!-- style -->
     <link rel="shortcut icon" href="img/favicon.png">
-    <link rel="stylesheet" href="css/font-awesome.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="/css/font-awesome.css">
+    <link rel="stylesheet" href="/css/main.css">
 
-    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" />
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" type="text/css" href="js/libs/rs-plugin/css/settings.css" media="screen">
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="/css/jquery.fancybox.css" />
+    <link rel="stylesheet" href="/css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="/js/libs/rs-plugin/css/settings.css" media="screen">
+    <link rel="stylesheet" href="/css/animate.css">
     <!--styles -->
-    <link href="css/select2.css" rel="stylesheet" />
+    <link href="/css/select2.css" rel="stylesheet" />
 </head>
 <body class="courses-list">
 <!-- page header -->
@@ -48,7 +48,7 @@
             <div class="grid-row clear-fix">
                 <!-- logo -->
                 <a href="index.html" class="logo">
-                    <img src="/images/logo.png"  data-at2x="/images/logo@2x.png" alt>
+                    <img src="img/logo.png"  data-at2x="img/logo@2x.png" alt>
                     <h1>uniLearn</h1>
                 </a>
                 <!-- / logo -->
@@ -174,7 +174,6 @@
 </header>
 <!-- / page header -->
 <!-- content -->
-<!-- content -->
 <div class="page-content">
     <div class="container">
         <!-- calendar header -->
@@ -200,8 +199,6 @@
         <!-- / container wrap calendar -->
     </div>
 </div>
-<!-- / content -->
-
 <!-- / content -->
 <!-- footer -->
 <footer>
@@ -298,13 +295,13 @@
 <!-- / footer -->
 <script src="/js/libs/jquery.min.js"></script>
 <script src="/js/libs/select2.js"></script>
-<script type='text/javascript' src='js/libs/jquery.validate.min.js'></script>
+<script type='text/javascript' src='/js/jquery.validate.min.js'></script>
 <script src="/js/libs/jquery.form.min.js"></script>
 <script src="/js/libs/TweenMax.min.js"></script>
 <script src="/js/libs/main.js"></script>
 <!-- jQuery REVOLUTION Slider  -->
-{{--<script type="text/javascript" src="rs-plugin/js/jquery.themepunch.tools.min.js"></script>
-<script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>--}}
+<script type="text/javascript" src="/js/libs/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+<script type="text/javascript" src="/js/libs/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
 <!-- REVOLUTION BANNER CSS SETTINGS -->
 <script src="/js/libs/jquery.isotope.min.js"></script>
 

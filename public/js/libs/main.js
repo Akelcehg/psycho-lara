@@ -1148,6 +1148,7 @@ $(document).ready(function () {
   /********   Event content   *********/
   /**/
   if ($(".calendar-header").length) {
+    return;
     $(function () {
 
       var event_content = {
